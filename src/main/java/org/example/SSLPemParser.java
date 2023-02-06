@@ -7,9 +7,6 @@ import org.bouncycastle.util.io.pem.PemObjectParser;
 import java.io.*;
 
 public class SSLPemParser extends PEMParser {
-    private static final String BEGIN_IGNORE = "-----BEGIN EC PARAMETERS";
-    private static final String END_IGNORE = "-----END EC PARAMETERS";
-
     public SSLPemParser(Reader reader) {
         super(reader);
     }
